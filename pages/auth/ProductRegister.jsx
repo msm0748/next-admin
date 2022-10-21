@@ -1,5 +1,6 @@
-import Layout from "../components/Layout";
-import StyleProductTable from "../components/common/Table";
+import Layout from "../../components/auth/Layout";
+import StyleProductTable from "../../components/common/Table";
+import StyleTextInput from "../../components/common/Input/Text";
 
 export default function ProductRegister() {
     return (
@@ -18,14 +19,17 @@ export default function ProductRegister() {
                             <tr>
                                 <th>상품 등록</th>
                                 <td>
-                                    <input type="text" placeholder="예시) 플라워 미니 원피스, 원피스 1위상품" />
+                                    <StyleTextInput
+                                        className="w-full"
+                                        placeholder="예시) 플라워 미니 원피스, 원피스 1위상품"
+                                    />
                                 </td>
                             </tr>
                             <tr>
                                 <th>상품요약설명</th>
                                 <td>
-                                    <input
-                                        type="text"
+                                    <StyleTextInput
+                                        className="w-full"
                                         placeholder="예시) 주문폭주!! 페미닌한 원피스 Free, L, XL까지~~"
                                     />
                                 </td>
@@ -49,7 +53,7 @@ export default function ProductRegister() {
                             <tr>
                                 <th>판매가</th>
                                 <td>
-                                    <input type="text" />원
+                                    <StyleTextInput />원
                                 </td>
                             </tr>
                             <tr>
@@ -63,7 +67,7 @@ export default function ProductRegister() {
                                     </div>
                                     <div>
                                         <div>
-                                            <input type="text" />
+                                            <StyleTextInput />
                                             <select name="" id="">
                                                 <option value="원">원</option>
                                                 <option value="%">%</option>

@@ -1,17 +1,7 @@
 import Head from "next/head";
 import styled from "@emotion/styled/macro";
 import tw from "twin.macro";
-import Snb from "../components/Snb";
-import Layout from "../components/Layout";
-
-const Input = tw.input`
-    text-center border h-28
-`;
-const MyDiv = styled.div`
-    background: gold;
-    font-size: 5rem;
-    margin-top: 10px;
-`;
+import Layout from "../components/auth/Layout";
 
 export default function Home() {
     return (

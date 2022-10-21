@@ -21,9 +21,6 @@ const StyleProductTable = styled.div`
     }
     td {
         ${tw`px-6 py-3 text-sm text-left`}
-        input[type=text] {
-            ${tw`border rounded-md py-1 pl-2`}
-        }
     }
 `;
 
